@@ -1,0 +1,278 @@
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500");
+@import 'avatars.css';
+
+/* Toolbar area */
+
+.menuBtn {
+  background-color: transparent;
+  border: none;
+  height: 38px;
+  margin: 16px;
+  width: 36px;
+}
+
+md-toolbar h1 {
+  margin: auto;
+}
+
+/* Sidenav area */
+
+md-list .md-button {
+  color: inherit;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+  md-list .md-button.selected {
+    color: #03a9f4;
+  }
+
+.avatar {
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+/* Primary content area */
+
+#content {
+  overflow: hidden;
+}
+  
+    #content .md-button.action {
+      background-color: transparent;
+      border: none;
+      height: 38px;
+      margin: 8px auto 16px 0;
+      position: absolute;
+      
+      right: 25px;
+      width: 36px;
+    }
+
+    
+
+/* Utils */
+
+.content-wrapper {
+  position: relative;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Typography support coming in 0.8.0 */
+
+md-toolbar h1 {
+font-family: "ProximaNovaA-Extrabld", Arial, sans-serif;
+  font-size: 1.250em;
+  font-weight: 400;
+}
+
+
+/* Using Data-URI converted from svg until <md-icon> becomes available
+https://github.com/google/material-design-icons
+*/
+.menuBtn {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9IkhlYWRlciI+CiAgICA8Zz4KICAgICAgICA8cmVjdCB4PSItNjE4IiB5PSItMjIzMiIgZmlsbD0ibm9uZSIgd2lkdGg9IjE0MDAiIGhlaWdodD0iMzYwMCIvPgogICAgPC9nPgo8L2c+CjxnIGlkPSJMYWJlbCI+CjwvZz4KPGcgaWQ9Ikljb24iPgogICAgPGc+CiAgICAgICAgPHJlY3QgZmlsbD0ibm9uZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICAgICAgPHBhdGggZD0iTTMsMThoMTh2LTJIM1YxOHogTTMsMTNoMTh2LTJIM1YxM3ogTTMsNnYyaDE4VjZIM3oiIHN0eWxlPSJmaWxsOiNmM2YzZjM7Ii8+CiAgICA8L2c+CjwvZz4KPGcgaWQ9IkdyaWQiIGRpc3BsYXk9Im5vbmUiPgogICAgPGcgZGlzcGxheT0iaW5saW5lIj4KICAgIDwvZz4KPC9nPgo8L3N2Zz4=) no-repeat  center center;
+}
+
+.actionBtn {
+  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2Ij4NCiAgICA8cGF0aCBkPSJNMCAwaDM2djM2aC0zNnoiIGZpbGw9Im5vbmUiLz4NCiAgICA8cGF0aCBkPSJNNCAyN2gyOHYtM2gtMjh2M3ptMC04aDI4di0zaC0yOHYzem0wLTExdjNoMjh2LTNoLTI4eiIvPg0KPC9zdmc+) no-repeat  center center;
+}
+
+.feature {
+  
+background: url("../images/materialD1.gif") ;
+background-size: cover;
+height: 100vh; 
+width: 100%;
+margin: 0;  
+}
+
+ .flex-nav{
+  height:50px;
+  width: 100%;
+  background: white;
+  color: blue;
+  font-family: "ProximaNovaA-Extrabld", Arial, sans-serif;
+  font-size: 1.250em;
+  font-weight: 400;
+ }
+ md-sidenav {
+  position: absolute;
+  width: 304px;
+  min-width: 304px;
+
+  bottom: 0;
+  z-index: 60;
+  background-color: #673AB7;
+  overflow: auto;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  md-sidenav.md-closed {
+    display: none; }
+  md-sidenav.md-closed-add, md-sidenav.md-closed-remove {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* this is required as of 1.3x to properly
+       apply all styling in a show/hide animation */
+    transition: 0s all; }
+  md-sidenav.md-closed-add.md-closed-add-active, md-sidenav.md-closed-remove.md-closed-remove-active {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  md-sidenav.md-locked-open-add, md-sidenav.md-locked-open-remove {
+    position: static;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  md-sidenav.md-locked-open {
+    width: 304px;
+    min-width: 304px; }
+  md-sidenav.md-locked-open, md-sidenav.md-locked-open.md-closed, md-sidenav.md-locked-open.md-closed.md-sidenav-left, md-sidenav.md-locked-open.md-closed, md-sidenav.md-locked-open.md-closed.md-sidenav-right, md-sidenav.md-locked-open-remove.md-closed {
+    position: static;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  md-sidenav.md-locked-open-remove-active {
+    transition: width 0.3s cubic-bezier(0.55, 0, 0.55, 0.2), min-width 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    width: 0;
+    min-width: 0; }
+  md-sidenav.md-closed.md-locked-open-add {
+    width: 0;
+    min-width: 0;
+    -webkit-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0); }
+  md-sidenav.md-closed.md-locked-open-add-active {
+    transition: width 0.3s cubic-bezier(0.55, 0, 0.55, 0.2), min-width 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    width: 304px;
+    min-width: 304px;
+    -webkit-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0); }
+
+.md-sidenav-backdrop.md-locked-open {
+  display: none; }
+
+.md-sidenav-left, md-sidenav {
+  left: 0;
+  top: 0;
+  -webkit-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0); }
+  .md-sidenav-left.md-closed, md-sidenav.md-closed {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0); }
+
+.md-sidenav-right {
+  left: 100%;
+  top: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0); }
+  .md-sidenav-right.md-closed {
+    -webkit-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0); }
+
+
+}
+
+ .app-main-container{
+  
+  height: 100vh;
+  width:100%;
+  background: url("../images/materialD1.gif")  ;
+  background-size: cover;
+background-attachment: fixed;
+} 
+.home-main-container{
+  display: flex;
+  justify-content: space-between;
+
+
+  width:100%;
+  
+} 
+.home-flex-content{
+  display: flex;
+
+  position: static;
+  width: 200px;
+  height: 200px;
+  background: white;
+  
+}
+
+.tabsdemoStaticTabs {
+  /*
+ * Animation styles
+ */ }
+  .tabsdemoStaticTabs #tab1-content {
+    background-color: #3F51B5; }
+  .tabsdemoStaticTabs #tab2-content {
+    background-color: #673AB7; }
+  .tabsdemoStaticTabs #tab3-content {
+    background-color: #00796B; }
+  .tabsdemoStaticTabs .tabpanel-container {
+    display: block;
+    position: relative;
+    background: white;
+    border: 0px solid black;
+    height: 600px;
+    overflow: hidden; }
+  .tabsdemoStaticTabs [role="tabpanel"] {
+    color: white;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+    position: absolute; }
+  .tabsdemoStaticTabs [role="tabpanel"].ng-leave.ng-leave-active, .tabsdemoStaticTabs [role="tabpanel"].ng-enter {
+    top: -300px; }
+  .tabsdemoStaticTabs [role="tabpanel"].ng-leave, .tabsdemoStaticTabs [role="tabpanel"].ng-enter.ng-enter-active {
+    top: 0; }
+  .tabsdemoStaticTabs [role="tabpanel"].ng-leave {
+    z-index: 100; }
+  .tabsdemoStaticTabs .tabpanel-container [role="tabpanel"] {
+    padding: 20px; }
+  .tabsdemoStaticTabs .after-tabs-area {
+    padding: 25px; }
+  .tabsdemoStaticTabs .after-tabs-area > span {
+    margin-top: 25px;
+    padding-right: 15px;
+    vertical-align: middle;
+    line-height: 30px;
+    height: 35px; }
+  .tabsdemoStaticTabs .after-tabs-area > md-checkbox {
+    margin-top: 26px;
+    margin-left: 0px; }
+  .tabsdemoStaticTabs .md-header {
+    background-color: #1976D2 !important; }
+  .tabsdemoStaticTabs md-tab {
+    color: #90caf9 !important; }
+  .tabsdemoStaticTabs md-tab.active, .tabsdemoStaticTabs md-tab:focus {
+    color: white !important; }
+  .tabsdemoStaticTabs md-tab[disabled] {
+    opacity: 0.5; }
+  .tabsdemoStaticTabs .md-header .md-ripple {
+    border-color: #FFFF8D !important; }
+  .tabsdemoStaticTabs md-tabs-ink-bar {
+    background-color: #FFFF8D !important; }
+ITEM ONE
+ITEM TWO
+ITEM THREE
+
+.gridListdemoResponsiveUsage md-content {
+  height: 400px; }

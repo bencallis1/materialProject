@@ -1,0 +1,35 @@
+/* @license
+ * MyFonts Webfont Build ID 2443769, 2013-01-08T03:10:41-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Proxima Nova A Extrabold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-extrabld/
+ * 
+ * Webfont: Proxima Nova S Extrabold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-extrabld/
+ * 
+ * Webfont: Proxima Nova Extrabold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/extrabld/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2443769
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * 
+ * © 2013 Bitstream Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("http://hello.myfonts.net/count/2549f9");
+
+  
+@font-face {font-family: 'ProximaNovaA-Extrabld';src: url('webfonts/2549F9_0_0.eot');src: url('webfonts/2549F9_0_0-.eot#iefix') format('embedded-opentype'),url('webfonts/2549F9_0_0.woff') format('woff'),url('webfonts/2549F9_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaS-Extrabld';src: url('webfonts/2549F9_1_0.eot');src: url('webfonts/2549F9_1_0-.eot#iefix') format('embedded-opentype'),url('webfonts/2549F9_1_0.woff') format('woff'),url('webfonts/2549F9_1_0.ttf') format('truetype');}
+ 
